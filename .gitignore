@@ -1,0 +1,20 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules
+
+# npm
+package-lock.json
+
+#typescript cache
+tsconfig.tsbuildinfo
+
+#output directory
+dist
+
+# Coverage reports
+coverage/
+.nyc_output/

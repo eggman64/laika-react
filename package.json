@@ -1,0 +1,76 @@
+{
+  "name": "laika-react",
+  "version": "2.0.0",
+  "description": "React Laika client",
+  "homepage": "https://github.com/MEDIGO",
+  "keywords": [
+    "React",
+    "Laika",
+    "npm",
+    "Feature Flag"
+  ],
+  "types": "dist/index.d.ts",
+  "typings": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MEDIGO/laika-react"
+  },
+  "main": "./dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "test": "cypress run --component",
+    "test:coverage": "cypress run --component && nyc report --reporter=text --reporter=lcov",
+    "coverage:open": "open coverage/lcov-report/index.html",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
+    "lint:fix": "eslint . --ext .ts,.tsx,.js,.jsx --fix"
+  },
+  "files": [
+    "/dist"
+  ],
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-react": "^7.14.5",
+    "@cypress/code-coverage": "^3.14.7",
+    "@cypress/react": "^9.0.0",
+    "@cypress/webpack-dev-server": "^3.0.0",
+    "@eslint/js": "^9.37.0",
+    "@jsdevtools/coverage-istanbul-loader": "^3.0.5",
+    "@types/node": "^16.10.3",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@types/webpack": "^5.28.0",
+    "@typescript-eslint/eslint-plugin": "^8.46.1",
+    "@typescript-eslint/parser": "^8.46.1",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-istanbul": "^7.0.1",
+    "cypress": "^15.4.0",
+    "eslint": "^9.37.0",
+    "eslint-plugin-cypress": "^5.2.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.0",
+    "html-webpack-plugin": "^5.3.2",
+    "istanbul-lib-coverage": "^3.2.2",
+    "nyc": "^17.1.0",
+    "postinstall-postinstall": "^2.1.0",
+    "prettier": "^2.4.1",
+    "prop-types": "^15.7.2",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "ts-loader": "^9.2.6",
+    "ts-node": "^10.2.1",
+    "typescript": "^5.0.0",
+    "webpack": "^5.102.1",
+    "webpack-dev-server": "^5.2.2"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all",
+    "semi": false
+  }
+}
